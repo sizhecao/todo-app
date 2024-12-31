@@ -21,7 +21,16 @@ cd backend
 ```bash
 npm install
 ```
-3. Set up enviornment variables in .env file
+3. Set up environment variables:
+   - Copy the `.env.example` file to a new file named `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Open the `.env` file and update the values:
+     - `PORT`: Port number of the server (Default: 5001)
+     - `MONGODB_URI`: MongoDB connection string
+     - `JWT_SECRET`: JWT secret key
+
 4. Start the server:
 ```bash
 npm start
